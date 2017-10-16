@@ -1,0 +1,8 @@
+---
+spring:
+  profiles:
+    active: local
+
+info:
+  build:
+    version: "${version}"

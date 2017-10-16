@@ -1,6 +1,7 @@
 buildscript {
 	ext {
 		springBootVersion = '1.5.7.RELEASE'
+
 	}
 	repositories {
 		mavenCentral()
@@ -17,6 +18,14 @@ apply plugin: 'org.springframework.boot'
 group = 'com.thoughtworks.platformguild'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = 1.8
+
+//processResources {
+//	expand(project.properties)
+//}
+
+var {
+	version = '0.0.1-SNAPSHOT'
+}
 
 repositories {
 	mavenCentral()
